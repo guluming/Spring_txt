@@ -19,12 +19,12 @@ public class UserController {
     }
 
     @GetMapping("/user/id")
-    public ResponseEntity<Object> getUserId(@RequestParam("id") int id) {
+    public ResponseEntity<Object> getUserId(@RequestParam("id") Long id) {
         return userService.getUserId(id);
     }
 
     @DeleteMapping("/user/id")
-    public ResponseEntity<Object> deleteUserId(@RequestParam("id") int id) {
+    public ResponseEntity<Object> deleteUserId(@RequestParam("id") Long id) {
         return userService.deleteUserId(id);
     }
 
