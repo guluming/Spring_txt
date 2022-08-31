@@ -1,10 +1,8 @@
 package com.example.spring_txt;
 
-import com.example.spring_txt.entity.Users;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.data.jpa.domain.JpaSort;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -54,9 +52,9 @@ public class SpringTxtApplication {
                 PreparedStatement stmt = con.prepareStatement(query.toString());
 
                 stmt.setLong(1, Long.parseLong(splitedStr[0].trim()));
-                stmt.setString(4, splitedStr[1].trim());
                 stmt.setInt(2, Integer.parseInt(splitedStr[2].trim()));
                 stmt.setString(3, splitedStr[3].trim());
+                stmt.setString(4, splitedStr[1].trim());
                 stmt.setInt(5, pay);
                 stmt.executeUpdate();
             }
