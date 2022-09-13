@@ -24,9 +24,6 @@ import java.util.List;
 @SpringBootApplication
 @Slf4j
 public class SpringTxtApplication {
-
-    private static UserRepository userRepository;
-
     public static void main(String[] args) throws IOException, SQLException, ClassNotFoundException {
         SpringApplication.run(SpringTxtApplication.class, args);
 
