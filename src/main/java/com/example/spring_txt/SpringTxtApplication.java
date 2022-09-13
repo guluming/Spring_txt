@@ -90,7 +90,6 @@ public class SpringTxtApplication {
                 }
 
                 Users user = new Users(Long.parseLong(splitedStr[0].trim()), splitedStr[1].trim(), Integer.parseInt(splitedStr[2].trim()), splitedStr[3].trim(), pay);
-//                System.out.println(user.getId());
 
                 userRepository.save(user);
             }
