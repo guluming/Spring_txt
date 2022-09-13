@@ -25,11 +25,11 @@ public class Users {
     @Column
     private int pay;
 
-//    public Users(Long id, String name, int age, String gender, int pay) {
-//        this.id = id;
-//        this.name = name;
-//        this.age = age;
-//        this.gender = gender;
-//        this.pay = pay;
-//    }
+    public Users(Long id, String name, int age, String gender, int pay) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        this.pay = pay;
+    }
 }
